@@ -13,8 +13,10 @@ size_t bufsize = 0;
 
 
 	if (getline(&line, &bufsize, stdin) == -1)
-	{/* Use getline() to read input from stdin */
+	
+	{printf("bye :( \n");/* Use getline() to read input from stdin */
 		perror("getline");
+		free(line);
 		exit(EXIT_FAILURE);
 	}
 
@@ -68,6 +70,7 @@ char *token, *saveptr;
 	}
 		tokens[position] = NULL;
 		/* Set the last element of the array to NULL to mark the end of the array */
+
 return (tokens);
 }
 
