@@ -1,1 +1,22 @@
-man
+.TH MAN_SIMPLE_SHELL "28 April 2023" "Simple Shell"
+
+.SH NAME
+simple_shell - a simple Unix shell
+
+.SH SYNOPSIS
+simple_shell
+
+.SH DESCRIPTION
+The simple shell tries to recreate a shell but in a more basic way.
+
+.SH EXAMPLES
+To run a command in the shell, simply enter the command and its arguments:
+
+.SH COMMANDS
+.B exit
+Exits the shell
+.B env
+Prints the current environment variables
+
+.SH AUTHOR
+Nahuel Silva
