@@ -24,10 +24,10 @@ int status;
 		args = split_line(line);
 		status = execute(args);
 
-		free(line);/* Free the memory allocated for the input line */
+
 		free(args);/* Free the memory allocated for the argument array */
 
 	} while (status);
-
+	free(line);/* Free the memory allocated for the input line */
 return (EXIT_SUCCESS);/* Loop until the user enters "exit" */
 }
