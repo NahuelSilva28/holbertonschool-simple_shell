@@ -24,7 +24,6 @@ return (line);
 /**
 * split_line - split a line into tokens
 * @line: the line to split
-* @bufsize: a pointer to the size of the buffer
 * Return: an array of tokens
 */
 char **split_line(char *line)
