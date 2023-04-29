@@ -13,7 +13,7 @@ size_t bufsize = 0;
 
 
 	if (getline(&line, &bufsize, stdin) == -1)
-	
+
 	{printf("bye :( \n");/* Use getline() to read input from stdin */
 		perror("getline");
 		free(line);
@@ -133,7 +133,7 @@ int status;
 	}
 
 		token = strtok_r(path_copy, ":", &saveptr);
-/* Iterate over the tokens and try to execute the command from each directory */
+/*Iterate over the tokens and try to execute the command from each directory*/
 		while (token != NULL)
 	{
 		char *command_path = malloc(strlen(token) + strlen(args[0]) + 2);
