@@ -25,9 +25,10 @@ int status;
 		status = execute(args);
 
 
-		free(args);/* Free the memory allocated for the argument array */
+		free(line);/* Free the memory allocated for the input line */
+        	free_tokens(args);/* Free the memory allocated for the argument array */
 
 	} while (status);
-	free(line);/* Free the memory allocated for the input line */
+
 return (EXIT_SUCCESS);/* Loop until the user enters "exit" */
 }

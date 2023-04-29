@@ -16,5 +16,6 @@ char **split_line(char *line);
 int execute(char **args);
 void exit_shell(void);
 extern char **environ;
+void free_tokens(char **tokens);
 
 #endif /* MAIN_H */
