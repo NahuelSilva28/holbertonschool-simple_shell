@@ -41,6 +41,9 @@ The simple shell is a simplified version of the Unix shell, can be used to run c
 - env_shell
 ```prints the current environment variables by iterating over the environ global variable and printing each element.```
 
+- free_tokens
+```frees the memory allocated for an array of tokens```
+
 <h1 align="center">Authors</h1> 
 
 - [NahuelSilva28](https://github.com/NahuelSilva28)
